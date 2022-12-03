@@ -22,7 +22,7 @@ ul li{
 }
 ul li a{
 	text-decoration:none;
-	color:#fff;
+	color:#BF946F;
 	padding:5px 20px;
 	border:1px solid transparent;
 	transition:0.6s ease;
@@ -69,4 +69,29 @@ background-size:cover;
 body{background-image:url("images/greeen.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
+}
+
+.flex-container {
+	display:flex;
+	background-color:#BF946F;
+}
+.flex-container>div {
+	background-color:#f1f1f1;
+	margin:10px;
+	padding:20px;
+	font-size:30px;
+}
+
+h2 {
+	font-family: "century gothic";font-weight:100;
+}
+.section{
+	width:200px;
+	height:200px;
+}
+.container img{
+	height:100px;
+	margin:10px auto 10px auto;
+	display:center;
+
 }

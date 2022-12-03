@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{box-sizing:border-box;
+}
+
+body {
+background-image:url("images/greeen.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:cover;
+}
+
+/* Rosmarie logo top left corner*/
+.logo img{
+	float:left;
+	width:85px;
+	height:auto;
+}
+
+/*Navigation bar top right corner*/
+*{
+	margin:0;
+	padding:0;
+	font-family:"Century Gothic";
+}
+ul{
+	float:right;
+	list-style-type:none;
+	margin-top:25px;
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration:none;
+	color:#BF946F;
+	padding:5px 20px;
+	border:1px solid transparent;
+	transition:0.6s ease;
+}
+ul li a:hover{
+	background-color:#fff;
+	color:#000;
+}
+ul li.active a{
+	background-color:#fff;
+	color:#000;
+}
+
+
+.main{
+	max-width:1200px;
+	margin:auto;
+}
+.title{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%)
+}
+.title h1{
+	color:#fff;
+	font-size:70px;
+}
+
+
+/*Description of page, Header/ Contact Page*/
+.header {
+	padding:10px;
+	font-size:30px;
+	text-align:left;
+	background:#966942;
+}
+
+/*Product Cards*/
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	max-width:300px;
+	margin: auto;
+	text-align: center;
+	font-family: "century gothic";
+}
+
+.price {
+	background-color:#966942;
+	color:#733e20;
+	font-size:20px;
+}
+
+.card button {
+	border: none;
+	outline:0;
+	padding:12px;
+	color:#966942;
+	background-color:#bf946f;
+	text-align:center;
+	width:100%;
+	font-size:20px;
+}
+.card button:hover {
+	opacity: 0.7;
+}
+
+/*float four columns side by side*/
+.column {
+	float:left;
+	width:50%;
+	padding: 0 15px;
+}
+
+/*clear floats after the columns*/
+.row after {
+	content: "";
+	display:table;
+	clear:both;
+}
+
+/* newsletter container*/
+form {
+	font-family:"Century Gothic";
+}
+
+.section{
+	float:center;
+	padding:20px;
+	width:30%;
+	height:300px;
+	opacity:1;
+	margin:0 auto 0 auto;
+	position: fixed;
+}
+
+.div-container{
+	padding:20px;
+	background-color:#bf946f;
+}
+input [type=text], input[type=submit]{
+	width:37%;
+	padding:5px;
+	margin:8px 0;
+	display:inline-block;
+	border:1px solid #bf946f;
+	box-sizing:border-box;
+}
+
+input [type=checkbox] {
+	margin-top: 12px;
+}
+
+input [type=submit] {
+	background-color:#733e20;
+	color:#bf946f;
+	border:none;
+}
+input [type=submit] hover {
+	opacity:0.5;
+}
+
+/*Responsive layout- screen less than 800px wide, will make columns stack on top of each other*/
+@media screen and (max-width:800px) {	
+}
